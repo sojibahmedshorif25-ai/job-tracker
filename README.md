@@ -1,93 +1,128 @@
-# Job Portal - MERN Stack Application
+<div align="center">
 
-A full-stack **Job Portal** application built using the **MERN** stack, where users can register either as **students** (job seekers) or **recruiters** (job providers). The platform enables smooth interaction between job applicants and recruiters with role-based dashboards and secure authentication.
+# 💼 Job Tracker — MERN Stack Job Portal
 
-## 🔍 Overview
+### *Connect Talent with Opportunity*
 
-### 👨‍🎓 Student Functionality
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Redux](https://img.shields.io/badge/Redux_Toolkit-7-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-8-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- Register and login using JWT-based authentication
-- Update profile: bio, profile picture, skills, resume upload
-- View and apply to job postings
-- Dashboard to track applied job status and edit personal details
-
-### 🧑‍💼 Recruiter Functionality
-
-- Register and login securely
-- Register companies
-- Post jobs under registered companies
-- View applications for posted jobs
-- Accept or reject applicants
+</div>
 
 ---
 
-## 🧰 Tech Stack
+## 📖 Overview
 
-- **Frontend**: React.js, Redux, Tailwind CSS, ShadCN UI
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **File Storage**: Cloudinary (for profile pictures, resumes)
-- **API Testing**: Postman
+**Job Tracker** is a full-stack MERN job portal where students can upload profiles/resumes and apply to jobs, while recruiters can register companies, post jobs, and manage applicants. Features Cloudinary file storage and Redux state persistence.
+
+---
+
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 👤 **Student Portal** | Register, upload profile & resume |
+| 📄 **Resume Upload** | Cloudinary-powered file storage |
+| 💼 **Job Browsing** | Search and filter jobs |
+| 📝 **Job Applications** | Apply with cover letter |
+| 🏢 **Recruiter Dashboard** | Post & manage jobs |
+| 👥 **Applicant Tracking** | Accept/reject applicants |
+| 🔄 **Redux Persistence** | State survives page refresh |
+| 🎨 **ShadCN UI** | Beautiful Radix-based components |
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+| Technology | Purpose |
+|------------|---------|
+| **React 19** | UI library |
+| **Vite 6** | Build tool |
+| **React Router 7** | Routing |
+| **Redux Toolkit + Persist** | State management |
+| **Tailwind CSS v4** | Styling |
+| **ShadCN / Radix UI** | UI components |
+| **Axios** | HTTP client |
+| **React Hot Toast / Sonner** | Notifications |
+
+### Backend
+
+| Technology | Purpose |
+|------------|---------|
+| **Node.js + Express** | HTTP framework |
+| **MongoDB + Mongoose** | Database |
+| **JWT + bcryptjs** | Authentication |
+| **Cloudinary + Multer** | File storage |
+| **cookie-parser** | Cookie handling |
+
+---
+
+## 📁 Project Structure
+
+```
+job-tracker/
+├── frontend/                          # 🎨 React Frontend
+│   ├── src/
+│   │   ├── components/                # UI components (ShadCN)
+│   │   ├── pages/                     # Route pages
+│   │   ├── store/                     # Redux store + slices
+│   │   ├── hooks/                     # Custom hooks
+│   │   ├── services/                  # API services
+│   │   └── utils/                     # Utilities
+│   └── package.json
+│
+├── backend/                           # ⚙️ Express Backend
+│   ├── controllers/                   # Route handlers
+│   ├── models/                        # Mongoose schemas
+│   ├── routes/                        # API routes
+│   ├── middleware/                     # Auth middleware
+│   ├── config/                        # DB config
+│   ├── utils/                         # Helpers
+│   └── index.js
+│
+└── README.md
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+```bash
+# Clone
+git clone https://github.com/sojibahmedshorif25-ai/job-tracker.git
 
-- Node.js & npm
-- MongoDB (local or hosted)
-- A `.env` file (see below)
+# Install Frontend
+cd frontend && npm install
 
-### Installation
+# Install Backend
+cd ../backend && npm install
 
-1. **Clone the repository**
+# Configure .env
+cp .env.example .env
 
-   ```bash
-   git clone https://github.com/alokrathod/Job-Portal.git
-   cd Job-Portal
-   ```
+# Run
+cd frontend && npm run dev
+cd backend && npm run dev
+```
 
-2. **Install Dependencies (Backend)**
+---
 
-   ```bash
-   cd backend
-   npm install
-   ```
+## 👨‍💻 Author
 
-3. **Install Dependencies (Frontend)**
+**Sojib Ahmed**
 
-   ```bash
-   cd ../frontend
-   npm install
-   ```
+[![GitHub](https://img.shields.io/badge/GitHub-sojibahmedshorif25--ai-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sojibahmedshorif25-ai)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sojib_Ahmed-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sojib-ahmed-shorif)
 
-4. **Create a .env file in the backend directory and add the following:**
+---
 
-   ```
-    PORT=8000
-    MONGODB_URI=your_mongo_connection_string
-    JWT_SECRET=your_jwt_secret
-    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-    CLOUDINARY_API_KEY=your_cloudinary_api_key
-    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-   ```
+<div align="center">
 
-5. **Run the App**
+**⭐ Star this repo if you find it impressive!**
 
-   Start both the backend and frontend servers in separate terminals:
-
-   **Start Backend**
-
-   ```bash
-   cd backend
-   npm run dev
-   ```
-
-   **Start Frontend**
-
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+</div>
