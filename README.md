@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💼 Job Tracker — MERN Stack Job Portal
+# 💼 Job Tracker — Fullstack Job Portal
 
 ### *Connect Talent with Opportunity*
 
@@ -16,7 +16,7 @@
 
 ## 📖 Overview
 
-**Job Tracker** is a full-stack MERN job portal where students can upload profiles/resumes and apply to jobs, while recruiters can register companies, post jobs, and manage applicants. Features Cloudinary file storage and Redux state persistence.
+**Job Tracker** is a full-stack job portal where students can upload profiles/resumes and apply to jobs, while recruiters can register companies, post jobs, and manage applicants. Features Cloudinary file storage and Redux state persistence.
 
 ---
 
